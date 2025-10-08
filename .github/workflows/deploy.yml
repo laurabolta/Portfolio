@@ -1,0 +1,38 @@
+name: Deploy Hugo to laurabolta.github.io
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          submodules: true        # fetch theme if it’s a submodule
+          fetch-depth: 0
+
+      - name: Setup Hugo (extended)
+        uses: actions/setup-hugo@v3
+        with:
+          hugo-version: '0.151.0'
+          extended: true
+
+      - name: Build site
+        run: hugo --gc --minify
+
+      - name: Deploy to laurabolta.github.io
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          external_repository: laurabolta/laurabolta.github.io
+          publish_dir: ./public
+          publish_branch: main
