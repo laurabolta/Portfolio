@@ -13,7 +13,6 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
         with:
-          submodules: true      # gets your theme if it's a submodule
           fetch-depth: 0
 
       - name: Setup Hugo (extended)
@@ -22,13 +21,24 @@ jobs:
           hugo-version: '0.151.0'
           extended: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Prepare npm deps from Hugo modules
+        run: hugo mod npm pack
+
+      - name: Install npm dependencies
+        run: npm ci
+
       - name: Build site
         run: hugo --gc --minify
 
       - name: Deploy to laurabolta.github.io
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GH_TOKEN }}      # PAT from this repo's Secrets
+          personal_token: ${{ secrets.GH_TOKEN }}
           external_repository: laurabolta/laurabolta.github.io
           publish_dir: ./public
           publish_branch: main
