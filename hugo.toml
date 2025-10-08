@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = "https://laurabolta.github.io/"
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Laura Boltà Ballesteros'
 theme = "ananke"
 publishDir = "docs"
-baseURL = "https://laurabolta.github.io/"
+
