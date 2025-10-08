@@ -1,0 +1,7 @@
+node_modules
+# Hugo generated files
+resources/_gen/
+public/
+
+# Hugo build lock
+.hugo_build.lock
