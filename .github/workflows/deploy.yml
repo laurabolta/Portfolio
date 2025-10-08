@@ -1,38 +1,31 @@
-name: Deploy Hugo to laurabolta.github.io
+name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+    branches:
+      - main  # Trigger build on push to main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v4
-        with:
-          submodules: true        # fetch theme if it’s a submodule
-          fetch-depth: 0
 
-      - name: Setup Hugo (extended)
-        uses: actions/setup-hugo@v3
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.151.0'
-          extended: true
+          hugo-version: '0.151.0' # use your version
 
       - name: Build site
-        run: hugo --gc --minify
+        run: hugo --minify
 
-      - name: Deploy to laurabolta.github.io
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: laurabolta/laurabolta.github.io
+          github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./public
+          external_repository: laurabolta/laurabolta.github.io
           publish_branch: main
+
