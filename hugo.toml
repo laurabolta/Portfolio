@@ -6,4 +6,4 @@ title   = "Laura Boltà Ballesteros"
     path = "github.com/hugo-toha/toha/v4"
 
 [params]
-  background: "assets/images/site/background.jpg"
+  background = "/images/site/background.jpg"
