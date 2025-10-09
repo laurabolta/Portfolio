@@ -13,10 +13,10 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Basic
-  filter: "basic"
-- name: Language
-  filter: "language"
+- name: Programming Languages & Tools
+  filter: "Programming Languages & Tools"
+- name: AI & Machine Learning
+  filter: "AI & Machine Learning"
 #- name: Container
 #  filter: "container"
 #- name: Others
@@ -26,30 +26,47 @@ buttons:
 # Give a summary of you each skill in the summary section.
 skills:
 - name: Python
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Using as the main language for professional development. Have experience with libraries such as NumPy, Pandas, Scikit-learn, and PyTorch."
-  categories: ["language"]
-  url: "https://kubernetes.io/"
+  logo: /images/sections/skills/python.png
+  summary: "Main programming language for projects and coursework. Experienced with data analysis, machine learning, and AI frameworks such as NumPy, Pandas, Scikit-learn, and PyTorch. Applied in projects including breast cancer classification and computer vision tasks."
+  categories: ["Programming Languages & Tools"]
+  url: "https://www.python.org/"
 
 - name: C/C++
   logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  categories: ["language"]
+  summary: "Knowledge of C and C++ for algorithm implementation, contest programming, and problem-solving. Used in coursework and practical exercises to strengthen understanding of computational logic and data structures."
+  categories: ["Programming Languages & Tools"]
+
 
 - name: HTML
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-  categories: ["basic"]
+  logo: /images/sections/skills/html.png
+  summary: "Basic knowledge of HTML for creating and adapting project documentation and simple web interfaces. Able to combine with Python or AI models for visualization and interaction."
+  categories: ["Programming Languages & Tools"]
+  url: "https://html.spec.whatwg.org/multipage/"
 
 - name: SQL
-  logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  categories: ["basic"]
+  logo: /images/sections/skills/sql.svg
+  summary: "Familiar with relational databases and data engineering. Experience writing queries to analyze structured datasets and support machine learning pipelines."
+  categories: ["Programming Languages & Tools"]
   url: "https://www.docker.com/"
 
 - name: Git
   logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["others"]
+  summary: "Proficient in version control using Git and GitHub. Applied in collaborative AI projects, ensuring code organization, teamwork, and efficient project management."
+  categories: ["Programming Languages & Tools"]
   url: "https://git-scm.com/"
 
+- name: Machine Learning
+  summary: "Solid foundation in supervised and unsupervised learning, with hands-on experience in building classification and regression models. Applied in real projects like tumor classification and mentoring systems."
+  categories: ["AI & Machine Learning"]
+
+- name: Deep Learning
+  summary: "Practical experience with neural networks, CNNs, and deep learning frameworks. Built models for computer vision tasks and image classification coursework."
+  categories: ["AI & Machine Learning"]
+
+- name: Natural Language Processing (NLP)
+  summary: "Experience in text preprocessing, sentiment analysis, and AI-driven mentoring systems. Interested in applying NLP for real-world problem solving."
+  categories: ["AI & Machine Learning"]
+
+- name: Computer Vision
+  summary: "Skilled in applying convolutional neural networks and image recognition techniques. Experience with datasets for classification and analysis of visual patterns."
+  categories: ["AI & Machine Learning"]
