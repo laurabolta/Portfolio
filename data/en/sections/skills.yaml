@@ -44,10 +44,9 @@ skills:
   url: "https://html.spec.whatwg.org/multipage/"
 
 - name: SQL
-  logo: /images/sections/skills/sql.svg
+  logo: /images/sections/skills/sql.png
   summary: "Familiar with relational databases and data engineering. Experience writing queries to analyze structured datasets and support machine learning pipelines."
   categories: ["Programming Languages & Tools"]
-  url: "https://www.docker.com/"
 
 - name: Git
   logo: /images/sections/skills/git.png
