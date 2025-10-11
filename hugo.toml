@@ -7,3 +7,6 @@ title   = "Laura Boltà Ballesteros"
 
 [params]
   background = "/images/site/greycolor.png"
+
+[params.newsletter]
+  enable = false
