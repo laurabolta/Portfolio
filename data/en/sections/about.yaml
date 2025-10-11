@@ -82,7 +82,7 @@ badges:
 - type: soft-skill-indicator
   name: Leadership
   percentage: 100
-  color: blue
+  color: cyan
 
 - type: soft-skill-indicator
   name: Team Work
