@@ -29,5 +29,5 @@ projects:
 
 - name: AI Mentoring Program
   timeline: "Jun 2025"
-  url: "https://github.com/laurabolta/Synthesis-Project-I"
+  repo: https://github.com/laurabolta/Synthesis-Project-I
   summary: AI system to predict students at risk of academic failure and send automated alerts to support early intervention.
