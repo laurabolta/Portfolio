@@ -25,30 +25,23 @@ degrees:
     outOf: 10
   coreCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    #showGrades: false
+    showGrades: true
     collapseAfter: 3
     courses:
     - name: Machine Learning
-      achieved: 3.75
-      outOf: 4
+
     - name: Natural Language Processing
-      achieved: 3.80
-      outOf: 4
+
     - name: Neural Networks and Deep Learning
-      achieved: 3.5
-      outOf: 4
+
     - name: Distributed and Parallel Programming
-      achieved: 3.75
-      outOf: 4
+
     - name: Computer Vision
-      achieved: 3.75
-      outOf: 4
+ 
     - name: Problem Solving
-      achieved: 3.75
-      outOf: 4
+
     - name: Data Engineering
-      achieved: 3.75
-      outOf: 4
+
 
 - name: High School Diploma in Science and Technology
   icon: fa-university
