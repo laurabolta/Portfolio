@@ -18,7 +18,7 @@ experiences:
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/experiences/company1.jpg
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+    overview: Spanish coffee shop chain offering fresh food and specialty-style coffee, popular for its healthy, urban, and casual dining concept.
   positions:
   - designation: SBarista
     start: Dec 2024
@@ -36,7 +36,7 @@ experiences:
     # logo: /images/sections/experiences/company3.jpg
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/experiences/company3.jpg
-    overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
+    overview: A Community-focused educational center in Salt (Girona, Spain), part of the historic Escola Pia network of educational institutions in Catalonia.
   positions:
   - designation: Volunteer
     start: Nov 2022
@@ -52,7 +52,7 @@ experiences:
     logo: /images/sections/experiences/perfetti.png
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/experiences/company2.jpg
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    overview: An Italian-Dutch multinational company, one of the world’s largest confectionery and chewing gum manufacturers (brands include Mentos, Chupa Chups, Alpenliebe, Fruittella).
   positions:
   - designation: Licensing Trainee
     start: Jun 2022
