@@ -20,14 +20,17 @@ projects:
   repo: https://github.com/laurabolta/breast-cancer-prediction-ml # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Predicting breast cancer malignancy from medical data using Machine Learning (Logistic Regression, Random Forest, SVM).
+  tags: ["academic", "machine-learning", "healthcare", "pca"]
 
 - name: Negation and Uncertainty Detection in Using Classical, Machine Learning, and Deep Learning Techniques
   timeline: "May 2025"
   repo: https://github.com/laurabolta/negation-and-uncertainty-detection-nlp
   #url: ""
   summary: Clinical NLP project for detecting negation and uncertainty in Spanish/Catalan texts using rule-based, CRF, and BiLSTM approaches.
+  tags: ["academic", "nlp", "clinical", "crf", "bilstm"]
 
 - name: AI Mentoring Program
   timeline: "Jun 2025"
   repo: https://github.com/laurabolta/Synthesis-Project-I
   summary: AI system to predict students at risk of academic failure and send automated alerts to support early intervention.
+  tags: ["academic", "education", "machine-learning", "early-warning"]
