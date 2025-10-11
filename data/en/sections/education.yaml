@@ -25,7 +25,7 @@ degrees:
     outOf: 10
   coreCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    showGrades: false
+    #showGrades: false
     collapseAfter: 3
     courses:
     - name: Machine Learning
